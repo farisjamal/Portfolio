@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1117"/>
+      <stop offset="100%" style="stop-color:#1a1033"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#312e81"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg1)"/>
+
+  <!-- Top nav bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#13111f" rx="0"/>
+  <circle cx="28" cy="24" r="10" fill="#6366f1"/>
+  <text x="46" y="29" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">e-Prihatin UTHM</text>
+  <rect x="580" y="14" width="80" height="20" rx="10" fill="#6366f1" opacity="0.3"/>
+  <text x="597" y="28" font-family="monospace" font-size="11" fill="#818cf8">Dashboard</text>
+  <rect x="676" y="14" width="60" height="20" rx="10" fill="#6366f1" opacity="0.15"/>
+  <text x="689" y="28" font-family="monospace" font-size="11" fill="#818cf8">Logout</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="160" height="402" fill="#13111f" opacity="0.8"/>
+  <rect x="0" y="48" width="2" height="402" fill="#6366f1" opacity="0.5"/>
+
+  <!-- Sidebar menu items -->
+  <rect x="10" y="72" width="140" height="32" rx="6" fill="#6366f1" opacity="0.2"/>
+  <rect x="18" y="83" width="12" height="12" rx="2" fill="#818cf8"/>
+  <text x="38" y="93" font-family="monospace" font-size="11" fill="#e2e8f0">Overview</text>
+
+  <rect x="18" y="120" width="12" height="12" rx="2" fill="#4b5563" opacity="0.6"/>
+  <text x="38" y="130" font-family="monospace" font-size="11" fill="#9ca3af">Donations</text>
+
+  <rect x="18" y="150" width="12" height="12" rx="2" fill="#4b5563" opacity="0.6"/>
+  <text x="38" y="160" font-family="monospace" font-size="11" fill="#9ca3af">Departments</text>
+
+  <rect x="18" y="180" width="12" height="12" rx="2" fill="#4b5563" opacity="0.6"/>
+  <text x="38" y="190" font-family="monospace" font-size="11" fill="#9ca3af">Tax Letters</text>
+
+  <rect x="18" y="210" width="12" height="12" rx="2" fill="#4b5563" opacity="0.6"/>
+  <text x="38" y="220" font-family="monospace" font-size="11" fill="#9ca3af">Users</text>
+
+  <!-- Roles section in sidebar -->
+  <text x="18" y="270" font-family="monospace" font-size="9" fill="#6b7280">ROLES</text>
+  <rect x="18" y="278" width="60" height="18" rx="9" fill="#6366f1" opacity="0.3"/>
+  <text x="28" y="291" font-family="monospace" font-size="9" fill="#818cf8">Admin</text>
+  <rect x="18" y="302" width="60" height="18" rx="9" fill="#4f46e5" opacity="0.2"/>
+  <text x="24" y="315" font-family="monospace" font-size="9" fill="#818cf8">Dept Staff</text>
+  <rect x="18" y="326" width="60" height="18" rx="9" fill="#4f46e5" opacity="0.2"/>
+  <text x="28" y="339" font-family="monospace" font-size="9" fill="#818cf8">Donor</text>
+
+  <!-- Main content area -->
+  <!-- Stat cards row -->
+  <!-- Card 1: Total Donations -->
+  <rect x="178" y="68" width="180" height="90" rx="10" fill="#1e1b4b" opacity="0.8" stroke="#6366f1" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="194" y="93" font-family="monospace" font-size="10" fill="#9ca3af">Total Donations</text>
+  <text x="194" y="122" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">RM 48,200</text>
+  <text x="194" y="142" font-family="monospace" font-size="9" fill="#6366f1">▲ 12% this month</text>
+
+  <!-- Card 2: Departments -->
+  <rect x="374" y="68" width="180" height="90" rx="10" fill="#1e1b4b" opacity="0.8" stroke="#6366f1" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="390" y="93" font-family="monospace" font-size="10" fill="#9ca3af">Departments</text>
+  <text x="390" y="122" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">8</text>
+  <text x="390" y="142" font-family="monospace" font-size="9" fill="#6366f1">All under one platform</text>
+
+  <!-- Card 3: Tax Letters -->
+  <rect x="570" y="68" width="200" height="90" rx="10" fill="#1e1b4b" opacity="0.8" stroke="#6366f1" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="586" y="93" font-family="monospace" font-size="10" fill="#9ca3af">Tax Letters Issued</text>
+  <text x="586" y="122" font-family="monospace" font-size="22" font-weight="bold" fill="#e2e8f0">124</text>
+  <text x="586" y="142" font-family="monospace" font-size="9" fill="#6366f1">Auto-generated PDF</text>
+
+  <!-- Chart area -->
+  <rect x="178" y="172" width="390" height="200" rx="10" fill="#13111f" stroke="#6366f1" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="196" y="195" font-family="monospace" font-size="11" font-weight="bold" fill="#e2e8f0">Monthly Donation Overview</text>
+
+  <!-- Chart bars -->
+  <rect x="210" y="300" width="28" height="60" rx="3" fill="url(#bar)" opacity="0.7"/>
+  <rect x="258" y="270" width="28" height="90" rx="3" fill="url(#bar)" opacity="0.8"/>
+  <rect x="306" y="255" width="28" height="105" rx="3" fill="url(#bar)"/>
+  <rect x="354" y="280" width="28" height="80" rx="3" fill="url(#bar)" opacity="0.75"/>
+  <rect x="402" y="240" width="28" height="120" rx="3" fill="url(#bar)"/>
+  <rect x="450" y="260" width="28" height="100" rx="3" fill="url(#bar)" opacity="0.85"/>
+  <rect x="498" y="220" width="28" height="140" rx="3" fill="url(#bar)"/>
+
+  <!-- Month labels -->
+  <text x="213" y="372" font-family="monospace" font-size="8" fill="#6b7280">Jan</text>
+  <text x="261" y="372" font-family="monospace" font-size="8" fill="#6b7280">Feb</text>
+  <text x="309" y="372" font-family="monospace" font-size="8" fill="#6b7280">Mar</text>
+  <text x="357" y="372" font-family="monospace" font-size="8" fill="#6b7280">Apr</text>
+  <text x="405" y="372" font-family="monospace" font-size="8" fill="#6b7280">May</text>
+  <text x="453" y="372" font-family="monospace" font-size="8" fill="#6b7280">Jun</text>
+  <text x="501" y="372" font-family="monospace" font-size="8" fill="#6b7280">Jul</text>
+
+  <!-- Right panel: Recent donations -->
+  <rect x="578" y="172" width="192" height="200" rx="10" fill="#13111f" stroke="#6366f1" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="594" y="195" font-family="monospace" font-size="11" font-weight="bold" fill="#e2e8f0">Recent Donors</text>
+
+  <!-- Donor rows -->
+  <circle cx="600" cy="218" r="10" fill="#6366f1" opacity="0.6"/>
+  <text x="596" y="222" font-family="monospace" font-size="10" fill="#e2e8f0">A</text>
+  <text x="618" y="218" font-family="monospace" font-size="10" fill="#e2e8f0">Ahmad Razif</text>
+  <text x="618" y="230" font-family="monospace" font-size="9" fill="#818cf8">RM 500</text>
+
+  <line x1="594" y1="245" x2="754" y2="245" stroke="#374151" stroke-width="1"/>
+
+  <circle cx="600" cy="262" r="10" fill="#4f46e5" opacity="0.6"/>
+  <text x="596" y="266" font-family="monospace" font-size="10" fill="#e2e8f0">S</text>
+  <text x="618" y="262" font-family="monospace" font-size="10" fill="#e2e8f0">Siti Norzila</text>
+  <text x="618" y="274" font-family="monospace" font-size="9" fill="#818cf8">RM 250</text>
+
+  <line x1="594" y1="289" x2="754" y2="289" stroke="#374151" stroke-width="1"/>
+
+  <circle cx="600" cy="306" r="10" fill="#6366f1" opacity="0.4"/>
+  <text x="596" y="310" font-family="monospace" font-size="10" fill="#e2e8f0">M</text>
+  <text x="618" y="306" font-family="monospace" font-size="10" fill="#e2e8f0">Mohd Hafiz</text>
+  <text x="618" y="318" font-family="monospace" font-size="9" fill="#818cf8">RM 1,000</text>
+
+  <line x1="594" y1="333" x2="754" y2="333" stroke="#374151" stroke-width="1"/>
+
+  <circle cx="600" cy="350" r="10" fill="#4f46e5" opacity="0.5"/>
+  <text x="596" y="354" font-family="monospace" font-size="10" fill="#e2e8f0">N</text>
+  <text x="618" y="350" font-family="monospace" font-size="10" fill="#e2e8f0">Nur Aisyah</text>
+  <text x="618" y="362" font-family="monospace" font-size="9" fill="#818cf8">RM 150</text>
+
+  <!-- Bottom tag -->
+  <rect x="178" y="385" width="590" height="1" fill="#6366f1" opacity="0.2"/>
+  <text x="178" y="410" font-family="monospace" font-size="10" fill="#6b7280">University Tun Hussein Onn Malaysia  •  Student Affairs Office  •  Donation Management Platform</text>
+</svg>

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1117"/>
+      <stop offset="100%" style="stop-color:#052e16"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg2)"/>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#0a1f13" rx="0"/>
+  <circle cx="28" cy="24" r="10" fill="#10b981"/>
+  <text x="46" y="29" font-family="monospace" font-size="14" font-weight="bold" fill="#e2e8f0">PropertyBook AI</text>
+
+  <!-- JWT Badge -->
+  <rect x="560" y="12" width="100" height="24" rx="12" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <text x="573" y="28" font-family="monospace" font-size="10" fill="#10b981">🔒 JWT Secured</text>
+
+  <!-- RBAC Badge -->
+  <rect x="674" y="12" width="106" height="24" rx="12" fill="#059669" opacity="0.2" stroke="#059669" stroke-width="1"/>
+  <text x="684" y="28" font-family="monospace" font-size="10" fill="#10b981">RBAC + RLS</text>
+
+  <!-- Left panel: Property listing -->
+  <rect x="20" y="64" width="240" height="360" rx="12" fill="#0a1f13" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="36" y="88" font-family="monospace" font-size="12" font-weight="bold" fill="#e2e8f0">Available Properties</text>
+
+  <!-- Property card 1 -->
+  <rect x="32" y="100" width="216" height="90" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="32" y="100" width="216" height="40" rx="8" fill="#10b981" opacity="0.15"/>
+  <!-- House icon -->
+  <polygon points="70,130 100,110 130,130" fill="#10b981" opacity="0.7"/>
+  <rect x="76" y="130" width="48" height="20" fill="#10b981" opacity="0.5"/>
+  <rect x="93" y="136" width="14" height="14" fill="#052e16"/>
+  <text x="148" y="122" font-family="monospace" font-size="10" font-weight="bold" fill="#e2e8f0">Villa Setia</text>
+  <text x="148" y="135" font-family="monospace" font-size="9" fill="#6b7280">Johor Bahru</text>
+  <text x="36" y="172" font-family="monospace" font-size="9" fill="#10b981">RM 850,000  •  4 bed  •  3 bath</text>
+  <rect x="164" y="160" width="72" height="20" rx="4" fill="#10b981" opacity="0.8"/>
+  <text x="176" y="174" font-family="monospace" font-size="9" fill="#052e16" font-weight="bold">Book View</text>
+
+  <!-- Property card 2 -->
+  <rect x="32" y="204" width="216" height="90" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="32" y="204" width="216" height="40" rx="8" fill="#059669" opacity="0.1"/>
+  <polygon points="70,232 100,213 130,232" fill="#10b981" opacity="0.5"/>
+  <rect x="76" y="232" width="48" height="20" fill="#059669" opacity="0.4"/>
+  <rect x="93" y="238" width="14" height="14" fill="#052e16"/>
+  <text x="148" y="225" font-family="monospace" font-size="10" font-weight="bold" fill="#e2e8f0">Taman Damai</text>
+  <text x="148" y="238" font-family="monospace" font-size="9" fill="#6b7280">Kuala Lumpur</text>
+  <text x="36" y="276" font-family="monospace" font-size="9" fill="#10b981">RM 450,000  •  3 bed  •  2 bath</text>
+  <rect x="164" y="263" width="72" height="20" rx="4" fill="#10b981" opacity="0.5"/>
+  <text x="176" y="277" font-family="monospace" font-size="9" fill="#e2e8f0" font-weight="bold">Book View</text>
+
+  <!-- Middle: Calendar -->
+  <rect x="276" y="64" width="260" height="200" rx="12" fill="#0a1f13" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="292" y="88" font-family="monospace" font-size="12" font-weight="bold" fill="#e2e8f0">Appointment Calendar</text>
+  <text x="292" y="105" font-family="monospace" font-size="10" fill="#6b7280">March 2026</text>
+
+  <!-- Calendar grid headers -->
+  <text x="295" y="124" font-family="monospace" font-size="9" fill="#6b7280">Sun</text>
+  <text x="330" y="124" font-family="monospace" font-size="9" fill="#6b7280">Mon</text>
+  <text x="365" y="124" font-family="monospace" font-size="9" fill="#6b7280">Tue</text>
+  <text x="400" y="124" font-family="monospace" font-size="9" fill="#6b7280">Wed</text>
+  <text x="435" y="124" font-family="monospace" font-size="9" fill="#6b7280">Thu</text>
+  <text x="471" y="124" font-family="monospace" font-size="9" fill="#6b7280">Fri</text>
+  <text x="507" y="124" font-family="monospace" font-size="9" fill="#6b7280">Sat</text>
+
+  <!-- Calendar dates row 1 -->
+  <text x="310" y="145" font-family="monospace" font-size="10" fill="#9ca3af">1</text>
+  <text x="345" y="145" font-family="monospace" font-size="10" fill="#9ca3af">2</text>
+  <text x="380" y="145" font-family="monospace" font-size="10" fill="#9ca3af">3</text>
+  <rect x="394" y="133" width="22" height="18" rx="4" fill="#10b981" opacity="0.3"/>
+  <text x="400" y="145" font-family="monospace" font-size="10" fill="#10b981">4</text>
+  <text x="440" y="145" font-family="monospace" font-size="10" fill="#9ca3af">5</text>
+  <text x="476" y="145" font-family="monospace" font-size="10" fill="#9ca3af">6</text>
+  <text x="512" y="145" font-family="monospace" font-size="10" fill="#9ca3af">7</text>
+
+  <!-- Row 2 -->
+  <text x="310" y="170" font-family="monospace" font-size="10" fill="#9ca3af">8</text>
+  <text x="345" y="170" font-family="monospace" font-size="10" fill="#9ca3af">9</text>
+  <text x="375" y="170" font-family="monospace" font-size="10" fill="#9ca3af">10</text>
+  <text x="410" y="170" font-family="monospace" font-size="10" fill="#9ca3af">11</text>
+  <rect x="428" y="158" width="22" height="18" rx="4" fill="#10b981" opacity="0.6"/>
+  <text x="433" y="170" font-family="monospace" font-size="10" fill="#052e16" font-weight="bold">12</text>
+  <text x="467" y="170" font-family="monospace" font-size="10" fill="#9ca3af">13</text>
+  <text x="503" y="170" font-family="monospace" font-size="10" fill="#9ca3af">14</text>
+
+  <!-- Row 3 -->
+  <text x="305" y="195" font-family="monospace" font-size="10" fill="#9ca3af">15</text>
+  <text x="340" y="195" font-family="monospace" font-size="10" fill="#9ca3af">16</text>
+  <rect x="358" y="183" width="22" height="18" rx="4" fill="#10b981"/>
+  <text x="362" y="195" font-family="monospace" font-size="10" fill="#052e16" font-weight="bold">17</text>
+  <text x="400" y="195" font-family="monospace" font-size="10" fill="#9ca3af">18</text>
+  <text x="435" y="195" font-family="monospace" font-size="10" fill="#9ca3af">19</text>
+  <text x="470" y="195" font-family="monospace" font-size="10" fill="#9ca3af">20</text>
+  <text x="505" y="195" font-family="monospace" font-size="10" fill="#9ca3af">21</text>
+
+  <!-- Row 4 -->
+  <text x="305" y="220" font-family="monospace" font-size="10" fill="#9ca3af">22</text>
+  <text x="340" y="220" font-family="monospace" font-size="10" fill="#9ca3af">23</text>
+  <text x="375" y="220" font-family="monospace" font-size="10" fill="#9ca3af">24</text>
+  <text x="410" y="220" font-family="monospace" font-size="10" fill="#9ca3af">25</text>
+  <text x="445" y="220" font-family="monospace" font-size="10" fill="#9ca3af">26</text>
+  <text x="470" y="220" font-family="monospace" font-size="10" fill="#9ca3af">27</text>
+  <rect x="496" y="208" width="22" height="18" rx="4" fill="#059669" opacity="0.4"/>
+  <text x="500" y="220" font-family="monospace" font-size="10" fill="#10b981">28</text>
+
+  <!-- AI Chat panel -->
+  <rect x="276" y="278" width="260" height="146" rx="12" fill="#0a1f13" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="292" y="302" font-family="monospace" font-size="12" font-weight="bold" fill="#e2e8f0">AI Booking Assistant</text>
+  <circle cx="300" cy="322" r="8" fill="#10b981" opacity="0.8"/>
+  <text x="297" y="326" font-family="monospace" font-size="10" fill="#052e16" font-weight="bold">AI</text>
+  <rect x="316" y="313" width="196" height="28" rx="6" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="324" y="331" font-family="monospace" font-size="9" fill="#10b981">Book Villa Setia on March 17, 2pm?</text>
+
+  <circle cx="516" cy="355" r="8" fill="#374151"/>
+  <text x="513" y="359" font-family="monospace" font-size="10" fill="#e2e8f0">U</text>
+  <rect x="292" y="345" width="216" height="28" rx="6" fill="#1a2e1f"/>
+  <text x="300" y="363" font-family="monospace" font-size="9" fill="#9ca3af">I want to view Villa Setia this weekend</text>
+
+  <text x="292" y="405" font-family="monospace" font-size="9" fill="#6b7280">Powered by N8N Automation  •  Email notifications auto-sent</text>
+
+  <!-- Right panel: Security features -->
+  <rect x="552" y="64" width="228" height="360" rx="12" fill="#0a1f13" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="568" y="88" font-family="monospace" font-size="12" font-weight="bold" fill="#e2e8f0">Security Stack</text>
+
+  <!-- JWT -->
+  <rect x="566" y="100" width="196" height="50" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="580" y="120" font-family="monospace" font-size="11" fill="#10b981" font-weight="bold">JWT Auth</text>
+  <text x="580" y="138" font-family="monospace" font-size="9" fill="#6b7280">Secure session management</text>
+
+  <!-- bcrypt -->
+  <rect x="566" y="160" width="196" height="50" rx="8" fill="#052e16" stroke="#059669" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="580" y="180" font-family="monospace" font-size="11" fill="#10b981" font-weight="bold">bcrypt Hashing</text>
+  <text x="580" y="198" font-family="monospace" font-size="9" fill="#6b7280">Password credential protection</text>
+
+  <!-- RLS -->
+  <rect x="566" y="220" width="196" height="50" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="580" y="240" font-family="monospace" font-size="11" fill="#10b981" font-weight="bold">Row Level Security</text>
+  <text x="580" y="258" font-family="monospace" font-size="9" fill="#6b7280">Data isolation per user role</text>
+
+  <!-- PDPA -->
+  <rect x="566" y="280" width="196" height="50" rx="8" fill="#052e16" stroke="#059669" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="580" y="300" font-family="monospace" font-size="11" fill="#10b981" font-weight="bold">PDPA 2010</text>
+  <text x="580" y="318" font-family="monospace" font-size="9" fill="#6b7280">Malaysia data protection compliant</text>
+
+  <!-- Tech stack tags -->
+  <text x="568" y="354" font-family="monospace" font-size="9" fill="#6b7280">STACK</text>
+  <rect x="568" y="360" width="56" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+  <text x="577" y="373" font-family="monospace" font-size="9" fill="#10b981">React</text>
+  <rect x="630" y="360" width="66" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+  <text x="636" y="373" font-family="monospace" font-size="9" fill="#10b981">TypeScript</text>
+  <rect x="568" y="383" width="72" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+  <text x="574" y="396" font-family="monospace" font-size="9" fill="#10b981">PostgreSQL</text>
+  <rect x="646" y="383" width="56" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+  <text x="654" y="396" font-family="monospace" font-size="9" fill="#10b981">N8N</text>
+</svg>
