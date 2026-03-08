@@ -30,14 +30,13 @@ const EasterEggs = () => {
         "color: #FFD700; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px;"
       );
 
-      ["naresh", "Naresh", "NARESH"].forEach((name) => {
-        // @ts-ignore
-        if (Object.hasOwn(window, name)) return;
+      ["faris", "Faris", "FARIS"].forEach((name) => {
+        if (Object.hasOwn(window as Record<string, unknown>, name)) return;
         Object.defineProperty(window, name, {
           get() {
             console.log(
               "%c✨ Abra Kadabra! ✨\n\n" +
-                "You just summoned the magic of Naresh! 🧙‍♂️\n" +
+                "You just summoned the magic of Faris! 🧙‍♂️\n" +
                 "What??? youre not impressed? Fine, but remember: With great power comes great responsibility! 💻⚡",
 
               "color: #FF4500; font-size: 18px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin-top:10px"

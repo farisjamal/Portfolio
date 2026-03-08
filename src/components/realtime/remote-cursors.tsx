@@ -9,8 +9,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
-// TODO: add clicking animation
-// TODO: listen to socket disconnect
 const RemoteCursors = () => {
   const { socket, users: _users, setUsers, focusedCursorId, setFocusedCursorId } = useContext(SocketContext);
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -35,8 +33,13 @@ const RemoteCursors = () => {
     socket.on("users-updated", (data: User[]) => {
       setUsers(data);
     });
+    socket.on("disconnect", () => {
+      setUsers([]);
+    });
     return () => {
       socket.off("cursor-changed");
+      socket.off("users-updated");
+      socket.off("disconnect");
     };
   }, [socket, isMobile]);
   const handleMouseMove = useThrottle((x, y) => {
