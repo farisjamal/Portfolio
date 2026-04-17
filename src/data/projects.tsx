@@ -348,8 +348,8 @@ const projects: Project[] = [
     id: "ddos-mitigation",
     category: "Security Infrastructure",
     title: "DDoS Mitigation System",
-    src: "/assets/projects-screenshots/ddos-mitigation/landing.svg",
-    screenshots: ["landing.svg"],
+    src: "/assets/projects-screenshots/ddos-mitigation/landing.jpg",
+    screenshots: ["landing.jpg"],
     skills: {
       frontend: [
         PROJECT_SKILLS.waf,
