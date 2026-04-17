@@ -239,8 +239,8 @@ const projects: Project[] = [
     id: "property-appointment",
     category: "Full Stack Web App",
     title: "Secure AI Property Appointment System",
-    src: "/assets/projects-screenshots/property-appointment/landing.svg",
-    screenshots: ["landing.svg"],
+    src: "/assets/projects-screenshots/property-appointment/landing.png",
+    screenshots: ["landing.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.react,
@@ -492,7 +492,7 @@ const projects: Project[] = [
       ],
       backend: [],
     },
-    live: "https://github.com/farisjamal",
+    live: "https://app.powerbi.com/groups/me/reports/bcbd1b3c-0eec-4168-9acf-e4edc413bc6b/7e0bc760a0a9c1a2e1b7?experience=power-bi",
     get content() {
       return (
         <div>
