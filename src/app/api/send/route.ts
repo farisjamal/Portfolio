@@ -1,3 +1,4 @@
+import * as React from "react";
 import { EmailTemplate } from "@/components/email-template";
 import { config } from "@/data/config";
 import { Resend } from "resend";
@@ -24,11 +25,11 @@ export async function POST(req: Request) {
       from: "Porfolio <onboarding@resend.dev>",
       to: [config.email],
       subject: "Contact me from portfolio",
-      react: EmailTemplate({
+      react: EmailTemplate({ 
         fullName: zodData.fullName,
         email: zodData.email,
         message: zodData.message,
-      }),
+      }) as React.ReactElement,
     });
 
     if (resendError) {

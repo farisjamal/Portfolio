@@ -31,7 +31,7 @@ const EasterEggs = () => {
       );
 
       ["faris", "Faris", "FARIS"].forEach((name) => {
-        if (Object.hasOwn(window as Record<string, unknown>, name)) return;
+        if (Object.hasOwn(window as unknown as Record<string, unknown>, name)) return;
         Object.defineProperty(window, name, {
           get() {
             console.log(

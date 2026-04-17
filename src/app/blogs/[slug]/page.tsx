@@ -14,7 +14,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const post = getBlogPost(params.slug);
   return {
     title: `${post.metadata.title} | Portfolio`,
@@ -59,7 +60,8 @@ const components = {
   ),
 };
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const post = getBlogPost(params.slug);
 
   return (
