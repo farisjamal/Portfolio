@@ -164,6 +164,12 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <span className="font-bold text-xs">JWT</span>,
   },
+  powerbi: {
+    title: "Power BI",
+    bg: "black",
+    fg: "white",
+    icon: <span className="font-bold text-xs">PowerBI</span>,
+  },
 };
 
 export type Project = {
@@ -183,8 +189,8 @@ const projects: Project[] = [
     id: "e-prihatin",
     category: "Donation Management",
     title: "System e-Prihatin UTHM",
-    src: "/assets/projects-screenshots/e-prihatin/landing.svg",
-    screenshots: ["landing.svg"],
+    src: "/assets/projects-screenshots/e-prihatin/landing.png",
+    screenshots: ["landing.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.react,
@@ -469,6 +475,38 @@ const projects: Project[] = [
             Ran connectivity tests across ICMP, HTTP, and SMTP. Identified and
             fixed a VLAN misconfiguration on the DMZ switch that was causing
             full packet loss to the Email Server.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    id: "sales-dashboard",
+    category: "Data Visualization",
+    title: "Sales Report Dashboard",
+    src: "/assets/projects-screenshots/sales-dashboard/landing.jpg",
+    screenshots: ["landing.jpg"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.powerbi,
+      ],
+      backend: [],
+    },
+    live: "https://github.com/farisjamal",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            Built an interactive sales report dashboard in Power BI visualizing sales performance across five store categories, with a year filter enabling dynamic data updates across all visuals.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">Trend Analysis & Period Comparisons</TypographyH3>
+          <p className="font-mono mb-2">
+            Developed a monthly sales table tracking Sum of Sales, Year-over-Year (YoY%) growth and Year-to-Date (YTD) cumulative totals to support trend analysis and period comparisons.
+          </p>
+          <TypographyH3 className="my-4 mt-8">Value and Volume Performance</TypographyH3>
+          <p className="font-mono mb-2">
+            Designed a horizontal bar chart ranking category revenue and a line chart displaying monthly quantity sold, providing a layered view of both value and volume performance.
           </p>
         </div>
       );
