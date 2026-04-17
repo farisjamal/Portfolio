@@ -16,10 +16,12 @@ interface HeaderProps {
   loader?: boolean;
 }
 
+const MotionHeader = motion.header as any;
+
 const Header = ({ loader }: HeaderProps) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   return (
-    <motion.header
+    <MotionHeader
       className={cn(
         styles.header,
         "transition-colors delay-100 duration-500 ease-in z-[1000]"
@@ -97,7 +99,7 @@ const Header = ({ loader }: HeaderProps) => {
       <AnimatePresence mode="wait">
         {isActive && <Nav setIsActive={setIsActive} />}
       </AnimatePresence>
-    </motion.header>
+    </MotionHeader>
   );
 };
 
