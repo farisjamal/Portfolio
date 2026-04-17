@@ -208,28 +208,12 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            A centralized web-based donation management platform consolidating
-            multiple university welfare programs under a single system,
-            streamlining donation workflows across UTHM departments.
+            Developing a centralized web-based donation management platform with role-based access control supporting three distinct user categories.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Role-Based Access Control</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Automated Tax Exemption Workflows</TypographyH3>
           <p className="font-mono mb-2">
-            Designed a role-based access control system supporting three user
-            categories — admin, department staff, and donors — ensuring each
-            user only accesses what they are authorized for.
-          </p>
-          <TypographyH3 className="my-4 mt-8">Automated Tax Exemption Letters</TypographyH3>
-          <p className="font-mono mb-2">
-            Automated the generation of tax exemption letters and donation
-            receipts, eliminating the fragmented manual process previously
-            handled separately across multiple departments.
-          </p>
-          <TypographyH3 className="my-4 mt-8">Centralized Dashboard</TypographyH3>
-          <p className="font-mono mb-2">
-            Provides a unified dashboard for administrators to monitor donation
-            campaigns, track donor contributions, and manage department-level
-            programs from a single interface.
+            Automating the generation of tax exemption letters and donation receipts, eliminating a fragmented process previously handled separately across multiple departments.
           </p>
         </div>
       );
@@ -238,7 +222,7 @@ const projects: Project[] = [
   {
     id: "property-appointment",
     category: "Full Stack Web App",
-    title: "Secure AI Property Appointment System",
+    title: "Secure AI Powered Property Appointment System",
     src: "/assets/projects-screenshots/property-appointment/landing.png",
     screenshots: ["landing.png"],
     skills: {
@@ -259,31 +243,19 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            A full-stack web application built with React, TypeScript, and
-            PostgreSQL that automates property viewing appointments with
-            AI-powered natural language booking via N8N automation workflows.
+            Building a full-stack web app using React, TypeScript and PostgreSQL that automates property viewing appointments.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">Security Architecture</TypographyH3>
           <p className="font-mono mb-2">
-            Designed a role-based access control (RBAC) system with Row Level
-            Security (RLS) policies in Supabase to enforce strict data
-            isolation between property owners, agents, and clients. Integrated
-            JWT Authentication and bcrypt password hashing in compliance with
-            Malaysia&apos;s PDPA 2010.
+            Designing a role-based access control (RBAC) with Row Level Security policies to enforce data isolation.
           </p>
-          <TypographyH3 className="my-4 mt-8">AI Automation with N8N</TypographyH3>
           <p className="font-mono mb-2">
-            Implemented N8N automation workflows for AI-powered natural
-            language appointment booking, property owner response handling, and
-            automated email notifications — replacing manual back-and-forth
-            coordination entirely.
+            Integrating JWT Authentication and bcrypt password hashing to secure user session and protect credential in compliance with Malaysia’s PDPA 2010.
           </p>
-          <TypographyH3 className="my-4 mt-8">Role-Based Flows</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">AI Automation Workflows</TypographyH3>
           <p className="font-mono mb-2">
-            Property owners can list and manage properties. Clients can browse
-            listings and request viewings. The system automatically routes
-            requests and sends confirmations to both parties.
+            Implement N8N automation workflows for AI-powered natural language appointment booking, property owner response handling and automated email notification to users.
           </p>
         </div>
       );
@@ -357,30 +329,16 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            A multi-VM sandbox network environment built with VirtualBox using
-            Windows 7, Windows 10, and Kali Linux instances to simulate
-            real-world attack scenarios and test defensive countermeasures in
-            a controlled setting.
+            Conducted network reconnaissance using Nmap to enumerate open ports, identify active services and fingerprint operating systems across target machines.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Network Reconnaissance</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Credential Attack Simulations</TypographyH3>
           <p className="font-mono mb-2">
-            Conducted network reconnaissance using Nmap to enumerate open
-            ports, identify active services, and fingerprint operating systems
-            across target machines — building a full network map before
-            simulating attacks.
+            Executed brute-force credential attacks using Hydra against target machines to demonstrate password vulnerability exploitation.
           </p>
-          <TypographyH3 className="my-4 mt-8">Credential Attack Simulation</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Analysis & Countermeasures</TypographyH3>
           <p className="font-mono mb-2">
-            Executed controlled brute-force credential attacks using Hydra
-            against target machines to demonstrate password vulnerability
-            exploitation and validate defensive password policies.
-          </p>
-          <TypographyH3 className="my-4 mt-8">Attack Documentation & Countermeasures</TypographyH3>
-          <p className="font-mono mb-2">
-            Documented three controlled network attack simulations — analyzing
-            each attack vector in detail and proposing corresponding defensive
-            countermeasures for each identified vulnerability.
+            Documented three controlled network attack simulations, analyzing attack vectors and proposing corresponding defensive countermeasures.
           </p>
         </div>
       );
@@ -406,30 +364,19 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            A DDoS mitigation system with a real-time monitoring dashboard
-            visualizing blocked vs. allowed traffic and load distribution
-            across servers, with administrative controls to simulate and
-            recover from server failures.
+            Built a real-time monitoring dashboard visualizing blocked versus allowed traffic with administrative controls for simulating and recovering from server failures.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">Web Application Firewall (WAF)</TypographyH3>
           <p className="font-mono mb-2">
-            Deployed a WAF proxy layer to inspect and block SQL injection and
-            XSS attack patterns before they reach the application servers,
-            filtering malicious traffic at the edge.
+            Deployed a web application Firewall (WAF) proxy layer to inspect and block SQL injection and XSS attack patterns.
           </p>
-          <TypographyH3 className="my-4 mt-8">Load Balancing</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Load Balancing & Redundancy</TypographyH3>
           <p className="font-mono mb-2">
-            Implemented a load balancing mechanism to distribute incoming
-            network traffic evenly across Server A and Server B, preventing
-            resource exhaustion on any single server during high-traffic
-            events.
+            Implemented a load balancing mechanism to distribute incoming network traffic evenly across Server A and B, preventing resource exhaustion on a single server.
           </p>
-          <TypographyH3 className="my-4 mt-8">Redundancy & Failover</TypographyH3>
           <p className="font-mono mb-2">
-            Configured a redundancy setup with synchronized dual-server
-            failover to maintain website availability during server failures,
-            ensuring continuous uptime even when one node goes down.
+            Configured a redundancy setup with synchronized dual-server failover to maintain website availability during server failures.
           </p>
         </div>
       );
@@ -452,29 +399,16 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            A three-zone network architecture (Internal LAN, DMZ, Outside)
-            designed using Cisco ASA 5505 firewall and VLAN segmentation to
-            isolate traffic between zones and protect an e-commerce
-            environment.
+            Built a three-zone network (Internal LAN, DMZ, Outside) using Cisco ASA 5505 firewall and VLAN segmentation to keep traffic between zones controlled and isolated.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Firewall & Traffic Control</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Traffic Flow & Security</TypographyH3>
           <p className="font-mono mb-2">
-            Set up NAT, ACLs, and DHCP on Cisco ASA to manage traffic flow and
-            restrict external access to HTTP and SMTP services only — blocking
-            all other inbound traffic from the outside zone.
+            Set up NAT, ACLs and DHCP on Cisco ASA to manage traffic flow and restrict external access to HTTP and SMTP services only.
           </p>
-          <TypographyH3 className="my-4 mt-8">DMZ Architecture</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Diagnostic & Troubleshooting</TypographyH3>
           <p className="font-mono mb-2">
-            Placed public-facing Web and Email servers inside the DMZ, keeping
-            them reachable externally without exposing the internal LAN — a
-            standard security architecture for internet-facing services.
-          </p>
-          <TypographyH3 className="my-4 mt-8">Testing & Debugging</TypographyH3>
-          <p className="font-mono mb-2">
-            Ran connectivity tests across ICMP, HTTP, and SMTP. Identified and
-            fixed a VLAN misconfiguration on the DMZ switch that was causing
-            full packet loss to the Email Server.
+            Ran connectivity tests across ICMP, HTTP and SMTP. Caught and fixed a VLAN misconfiguration on the DMZ switch that was causing full packet loss to the Email Server.
           </p>
         </div>
       );
@@ -483,7 +417,7 @@ const projects: Project[] = [
   {
     id: "sales-dashboard",
     category: "Data Visualization",
-    title: "Sales Report Dashboard",
+    title: "Sales Performance Dashboard (Power BI)",
     src: "/assets/projects-screenshots/sales-dashboard/landing.jpg",
     screenshots: ["landing.jpg"],
     skills: {
