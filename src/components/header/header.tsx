@@ -17,6 +17,7 @@ interface HeaderProps {
 }
 
 const MotionHeader = motion.header as any;
+const MotionDiv = motion.div as any;
 
 const Header = ({ loader }: HeaderProps) => {
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -90,12 +91,12 @@ const Header = ({ loader }: HeaderProps) => {
           ></div>
         </Button>
       </div>
-      <motion.div
+      <MotionDiv
         variants={background}
         initial="initial"
         animate={isActive ? "open" : "closed"}
         className={styles.background}
-      ></motion.div>
+      ></MotionDiv>
       <AnimatePresence mode="wait">
         {isActive && <Nav setIsActive={setIsActive} />}
       </AnimatePresence>
